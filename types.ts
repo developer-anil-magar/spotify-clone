@@ -43,6 +43,10 @@ export interface UserDetails {
   payment_method: string;
 }
 
+export interface ProductWithPrice extends Product {
+  prices?: Price[];
+}
+
 export interface Subscription {
   id: string;
   user_id: string;
